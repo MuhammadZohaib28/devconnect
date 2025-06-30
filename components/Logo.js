@@ -4,7 +4,7 @@ import { FaCode } from "react-icons/fa";
 
 export default function Logo({ animated = false }) {
   const [isAnimating, setIsAnimating] = useState(false);
-
+    
   useEffect(() => {
     if (animated) {
       setIsAnimating(true);
