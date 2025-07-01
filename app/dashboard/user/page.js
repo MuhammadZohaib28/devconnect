@@ -20,22 +20,27 @@ export default function UserDashboard() {
     {
       id: 1,
       name: "E-commerce Website",
-      developer: "Sarah Johnson",
+      developer: "Muhammad Zohaib",
       status: "In Development",
-      deadline: "2023-12-15",
+      deadline: "24th July, 2025",
     },
     {
       id: 2,
       name: "Mobile App",
-      developer: "Mike Chen",
+      developer: "Irum Zafar",
       status: "Design Phase",
-      deadline: "2023-11-30",
+      deadline: "6th August, 2025",
     },
   ];
 
   const availableDevelopers = [
-    { id: 1, name: "Alex Rodriguez", skills: "React, Node.js", rating: 4.8 },
-    { id: 2, name: "Priya Patel", skills: "Python, Django", rating: 4.9 },
+    {
+      id: 1,
+      name: "Muhammad Zohaib",
+      skills: "React, NextJS, Node.js",
+      rating: 4.8,
+    },
+    { id: 2, name: "Haram Jamal", skills: "Python, Django", rating: 4.9 },
   ];
 
   return (

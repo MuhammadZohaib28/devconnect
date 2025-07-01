@@ -21,16 +21,16 @@ export default function Dashboard() {
     {
       id: 1,
       name: "E-commerce Platform",
-      client: "Acme Corp",
+      client: "Nasir Ali",
       status: "In Progress",
-      deadline: "2023-12-15",
+      deadline: "25th July, 2025",
     },
     {
       id: 2,
       name: "Portfolio Website",
-      client: "Jane Smith",
+      client: "Bisma Khan",
       status: "Review",
-      deadline: "2023-11-30",
+      deadline: "24th June, 2025",
     },
   ];
 
@@ -70,6 +70,7 @@ export default function Dashboard() {
             activeTab={activeTab}
             setActiveTab={setActiveTab}
             mobile
+            setSidebarOpen={setSidebarOpen}
           />
         </div>
       </div>
@@ -112,7 +113,7 @@ export default function Dashboard() {
           <div className="max-w-7xl mx-auto">
             <div className="mb-8">
               <h2 className="text-2xl font-bold text-gray-800">
-                Welcome back, John!
+                Welcome back, Muhammad Zohaib!
               </h2>
               <p className="text-gray-600">
                 Here's what's happening with your projects today.

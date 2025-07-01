@@ -16,8 +16,8 @@ export default function DevProfileCard() {
         <div className="flex justify-center -mt-12 mb-4">
           <div className="relative">
             <img
-              className="h-24 w-24 rounded-full border-4 border-white"
-              src="https://randomuser.me/api/portraits/men/32.jpg"
+              className="h-24 w-24 rounded-full border-4 border-white bg-yellow-300"
+              src="https://muhammadzuhaib.vercel.app/assets/zohaib's%20picture-409e52cc.png"
               alt="Developer profile"
             />
             <button
@@ -34,8 +34,8 @@ export default function DevProfileCard() {
         </div>
 
         <div className="text-center mb-4">
-          <h3 className="text-xl font-bold text-gray-900">John Developer</h3>
-          <p className="text-gray-600">Full Stack Developer</p>
+          <h3 className="text-xl font-bold text-gray-900">Muhammad Zohaib</h3>
+          <p className="text-gray-600">Frontend ReactJS/NextJS Developer</p>
         </div>
 
         <div className="flex justify-center space-x-2 mb-4">
@@ -67,17 +67,17 @@ export default function DevProfileCard() {
         <div className="space-y-2 mb-4">
           <div className="flex items-center text-gray-600">
             <FiMail className="mr-2" />
-            <span>john.developer@example.com</span>
+            <span>zohaibsoomro0101@gmail.com</span>
           </div>
           <div className="flex items-center text-gray-600">
             <FiGlobe className="mr-2" />
-            <span>San Francisco, CA</span>
+            <span>Karachi, Pakistan</span>
           </div>
         </div>
 
         <div className="flex justify-center space-x-4">
           <a
-            href="https://github.com/johndev"
+            href="https://github.com/MuhammadZohaib28"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-gray-900"
@@ -85,7 +85,7 @@ export default function DevProfileCard() {
             <FaGithub className="h-6 w-6" />
           </a>
           <a
-            href="https://linkedin.com/in/johndev"
+            href="https://www.linkedin.com/in/muhammad-zohaib-b94280190/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-gray-900"

@@ -7,6 +7,7 @@ export default function DashboardSidebar({
   activeTab,
   setActiveTab,
   mobile = false,
+  setSidebarOpen,
 }) {
   const router = useRouter();
   const navItems = [
@@ -28,7 +29,10 @@ export default function DashboardSidebar({
         {navItems.map((item) => (
           <button
             key={item.id}
-            onClick={() => setActiveTab(item.id)}
+            onClick={() => {
+              setActiveTab(item.id);
+              if (setSidebarOpen) setSidebarOpen(false);
+            }}
             className={`cursor-pointer w-full flex items-center px-4 py-3 text-sm font-medium rounded-md ${
               activeTab === item.id
                 ? "bg-indigo-50 text-indigo-700"

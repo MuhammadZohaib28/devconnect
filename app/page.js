@@ -77,7 +77,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search developers, projects, or technologies..."
-              className="w-full px-6 py-4 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="bg-white w-full px-6 py-4 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />

@@ -117,7 +117,7 @@ export default function Navbar() {
                 John Developer
               </div>
               <div className="text-sm font-medium text-gray-500">
-                john@example.com
+                zohaibsoomro0101@gmail.com
               </div>
             </div>
           </div>
