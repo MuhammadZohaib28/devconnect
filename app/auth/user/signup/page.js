@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import LoadingButton from "@/components/LoadingButton";
 
 export default function UserSignup() {
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ export default function UserSignup() {
     confirmPassword: "",
     company: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const router = useRouter();
 
@@ -44,10 +46,11 @@ export default function UserSignup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
+      setLoading(true);
       // Handle signup logic
       console.log("User form submitted:", formData);
 
-
+      router.push("/dashboard/user");
     }
   };
 
@@ -182,13 +185,9 @@ export default function UserSignup() {
           </div>
         </div>
 
-        <button
-          type="submit"
-          className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          onClick={() => router.push("/dashboard/user")}
-        >
+        <LoadingButton type="submit" loading={loading}>
           Create Account
-        </button>
+        </LoadingButton>
       </form>
 
       <div className="mt-6">

@@ -29,7 +29,7 @@ export default function DashboardSidebar({
           <button
             key={item.id}
             onClick={() => setActiveTab(item.id)}
-            className={`w-full flex items-center px-4 py-3 text-sm font-medium rounded-md ${
+            className={`cursor-pointer w-full flex items-center px-4 py-3 text-sm font-medium rounded-md ${
               activeTab === item.id
                 ? "bg-indigo-50 text-indigo-700"
                 : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
@@ -44,7 +44,7 @@ export default function DashboardSidebar({
       <div className="px-4 py-3">
         <button
           onClick={() => router.push("/")}
-          className="w-full flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900"
+          className="w-full flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-200 hover:text-gray-900  bg-gray-100 cursor-pointer"
         >
           <FiLogOut className="mr-3" />
           Logout

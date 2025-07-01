@@ -28,15 +28,7 @@ export default function SelectionPage() {
         </Link>
       </div>
 
-      <p className="mt-8 text-gray-600 text-center">
-        Already have an account?{" "}
-        <Link
-          href="/auth/user/login"
-          className="text-indigo-600 hover:underline"
-        >
-          Log in
-        </Link>
-      </p>
+
     </div>
   );
 }

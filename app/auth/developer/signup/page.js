@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import LoadingButton from "@/components/LoadingButton";
 
 export default function DeveloperSignup() {
   const [formData, setFormData] = useState({
@@ -20,6 +21,7 @@ export default function DeveloperSignup() {
   const router = useRouter();
 
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,9 +50,14 @@ export default function DeveloperSignup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (validate()) {
       // Handle signup logic
+      setLoading(true);
       console.log("Form submitted:", formData);
+      setTimeout(() => {
+        router.push("/dashboard");
+      }, 1000);
     }
   };
 
@@ -226,13 +233,9 @@ export default function DeveloperSignup() {
           </div>
         </div>
 
-        <button
-          onClick={() => router.push("/dashboard")}
-          type="submit"
-          className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        >
+        <LoadingButton type="submit" loading={loading}>
           Create Account
-        </button>
+        </LoadingButton>
       </form>
 
       <div className="mt-6">

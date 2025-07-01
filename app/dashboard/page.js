@@ -75,7 +75,7 @@ export default function Dashboard() {
       </div>
 
       {/* Desktop sidebar */}
-      <div className="hidden md:flex md:flex-shrink-0">
+      <div className="hidden md:flex md:flex-shrink-0 ">
         <div className="flex flex-col w-72 border-r border-gray-200 bg-white">
           <div className="flex items-center h-16 px-4 border-b">
             <h1 className="text-xl font-bold text-indigo-600">DevConnect</h1>
